@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="255.0" vgap="10.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.Main">
+  <columnConstraints>
+    <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="364.0" minWidth="10.0" prefWidth="283.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="369.0" minWidth="10.0" prefWidth="317.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="Country:" />
+      <Label text="City" GridPane.rowIndex="1" />
+      <Label text="Currency code:" GridPane.rowIndex="2" />
+      <TextField fx:id="country" GridPane.columnIndex="1" />
+      <TextField fx:id="city" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField fx:id="currency" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Button fx:id="ok" alignment="CENTER" mnemonicParsing="false" onAction="#openNewStage" prefHeight="25.0" prefWidth="129.0" text="Ok" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Label fx:id="wrongLogin" textFill="RED" GridPane.rowIndex="3" />
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</GridPane>
